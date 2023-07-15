@@ -36,6 +36,7 @@ body{
     margin-right: 10px;
     /* padding: 0 0 0 0; */
 }
+
 .userImg img{
     width: 30px;
     height: 30px;
@@ -43,7 +44,12 @@ body{
  /* background: ; */
 } 
 
-.sidebar header {
+.header {
+    display: flex;
+    margin: 20px auto;
+
+}
+.sidebar .header {
     font-size: 22px;
     color: #9FA5AD;
     text-align: justify;
@@ -52,8 +58,8 @@ body{
     padding-left: 30px;
 }
 
-.sidebar header i{
-    margin-left: 99px;
+.sidebar .header i{
+    margin-left: 70px;
 }
 
 .topMenu, .bottomMenu {
@@ -80,12 +86,16 @@ body{
 ul li:hover a {
     padding-left: 50px;
     background-color: #EBF6FE;
-
 }
 
 .sidebar ul a i {
-    margin-right: 16px;
+    margin-right: 10px;
 }
 
+/* .navBar ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+} */
 
 
