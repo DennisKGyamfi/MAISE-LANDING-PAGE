@@ -4,65 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maise</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/95ad04cf66.js" crossorigin="anonymous"></script>
+    <title>Maise Landing Page</title>
 </head>
 
 <body>
-    <div class="sidebar">
-        <div class="header">
+    <!-- Nav-bar -->
+    <header class="page-header">
+        <nav class="nav-bar d-flex">
             <div>
-            <h1>Maise</h1>
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latest News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Politics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tech</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">More</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Science</a></li>
+                            <li><a class="dropdown-item" href="#">Research</a></li>
+                            <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div>
-            <i class="fa-solid fa-bars"></i>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Type to search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- Sidebar -->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="bg-light col-auto col-md-4 col-lg-3 min-vh-100">
+                <div class="bg-light p-2">
+                    <a class="d-flex text-decoration-none mt-1 align-items-center text-dark">
+                        <spa class="fs-4 d-none d-sm-inline">
+                            Maise
+                            </span><i class="fs-5 fa fa-menu "></i>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-4">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-dashboard"></i><span
+                                    class="fs-4 d-none ms-2 d-sm-inline">Storage</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-newspaper"></i><span
+                                    class="fs-4 d-none ms-2 d-sm-inline">News</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-film"></i><span class="fs-4 d-none ms-2 d-sm-inline">Movies</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-music"></i><span class="fs-4 d-none ms-2 d-sm-inline">Music</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-plane"></i><span class="fs-4 d-none ms-2 d-sm-inline">Travel</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="user">
-            <div class="userImg">
-                <img src="images/accImg.jpg" alt="User Image">
-            </div>
-            <div class="nameSection">
-                <h4 class="username">Nana Gyamfi</h4>
-                <p class="userLevel">Premium Plan</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-        <hr>
-        <ul class="topMenu">
-            <li><a href="#"><i class="fa-solid fa-hard-drive" style="color: #9FA5AD;"></i>Storage</a></li>
-            <li><a href="#"><i class="fa-solid fa-newspaper" style="color: #9FA5AD;"></i>News</a></li>
-            <li><a href="#"><i class="fa-solid fa-film" style="color: #9FA5AD;"></i>Movies</a></li>
-            <li><a href="#"><i class="fa-solid fa-music" style="color: #9FA5AD;"></i>Music</a></li>
-            <li><a href="#"><i class="fa-solid fa-plane-up" style="color: #9FA5AD;"></i>Travel</a></li>
-        </ul>
-        <hr>
-        <ul class="bottomMenu">
-            <li><a href="#"><i class="fa-regular fa-circle-user" style="color: #9FA5AD;"></i></i>Account</a></li>
-            <li><a href="#"><i class="fa-solid fa-gear" style="color: #9FA5AD;"></i>Settings</a></li>
-            <li><a href="#"><i class="fa-regular fa-circle-question" style="color: #9FA5AD;"></i>Help & Support</a></li>
-            <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #9FA5AD;"></i></i>Log out</a>
-            </li>
-        </ul>
     </div>
-    <nav class="navBar">
-        <ul>
-            <li><a href="#">Latest News</a></li>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Teach</a></li>
-            <li><a href="#">More</a></li>
-        </ul>
-    </nav>
-    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-<!--
-<i class="fa-solid fa-bars" style="color: #9FA5AD;"></i>
--->
