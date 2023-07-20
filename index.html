@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/95ad04cf66.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/95ad04cf66.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Maise Landing Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Nav-bar -->
-    <header class="page-header">
-        <nav class="nav-bar d-flex">
-            <div>
-                <ul class="nav nav-underline">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Latest News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Politics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Business</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tech</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">More</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Science</a></li>
-                            <li><a class="dropdown-item" href="#">Research</a></li>
-                            <li><a class="dropdown-item" href="#">Entertainment</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Type to search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </header>
+    <nav class="navi">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">Maise</div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#" target="_blank">Latest News</a></li>
+          <li><a href="#" target="_blank">Politics</a></li>
+          <li><a href="#" target="_blank">Business</a></li>
+          <li><a href="#" target="_blank">Sports</a></li>
+          <li><a href="#" target="_blank">Tech</a></li>
+          <li><a href="#" target="_blank">More</a></li>
+        </ul>
+      </div>
+       <div class="d-flex nav-right-section">
+        <a href="#">
+        <i class="fa-solid fa-bell" style="color: 9fa5ad"></i>
+        </a>
+        <a href="#">
+        <i class="fa-solid fa-comments" style="color: 9fa5ad"></i>
+        </a>
+        <form class="search-submit" >
+        <input type="text"  placeholder="Type to Search" name="Search"/>
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+
     <!-- Sidebar -->
-    <div class="container-fluid">
+
+    <div class="container-fluid sticky-top ">
         <div class="row flex-nowrap">
-            <div class="bg-light col-auto col-md-4 col-lg-3 min-vh-100">
+            <div class="bg-light col-auto col-md-2 col-md-3 min-vh-100">
                 <div class="bg-light p-2">
-                    <a class="d-flex text-decoration-none mt-1 align-items-center text-dark">
-                        <spa class="fs-4 d-none d-sm-inline">
-                            Maise
-                            </span><i class="fs-5 fa fa-menu "></i>
-                    </a>
+                    
                     <ul class="nav nav-pills flex-column mt-4">
                         <li class="nav-item">
                             <a href="#" class="nav-link text-white">
@@ -95,16 +91,36 @@
                         </li>
 
                     </ul>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mt-4">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-user-circle"></i><span class="fs-4 d-none ms-2 d-sm-inline">Account</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-gear"></i><span class="fs-4 d-none ms-2 d-sm-inline">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-gears"></i><span class="fs-4 d-none ms-1 d-sm-inline">Help & Support</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fs-5 fa fa-arrow-right"></i><span class="fs-4 d-none ms-2 d-sm-inline">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-
-
-
+    <main></main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
