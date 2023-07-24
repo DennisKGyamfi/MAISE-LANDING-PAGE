@@ -4,7 +4,7 @@ html {
   --primary: rgb(225, 225, 225);
   --dark-gray: rgb(90, 90, 90);
   --light-gray: rgb(148, 148, 148);
-  --focus-blue: rgb(69, 159, 189);
+  --focus-blue: #269af3;
 }
 
 body {
@@ -48,6 +48,9 @@ header nav .logo h1 {
 margin: auto;
 width: 55%;
 padding: 5px;
+}
+.nav-links:hover {
+  border-bottom: 2px solid #269af3;
 }
 
 .nav-links .nav-links-list {
@@ -143,7 +146,7 @@ header .nav-notifs .fa-bell, .fa-comments{
 /* Sidenav  */
 .sidenav {
   height: 100%;
-  width: 150px;
+  width: 170px;
   position: fixed;
   z-index: 1;
   /* Stay on top */
@@ -159,21 +162,26 @@ header .nav-notifs .fa-bell, .fa-comments{
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #818181;
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav a i {
+margin-right: 5px;
 }
 
-/* Style page content */
-main {
-  margin-left: 160px;
-  /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.sidenav a hr {
+  margin: ;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+
+  color: var(--focus-blue);
+  border-left: 2px solid #269af3;
+  background-color: #EBF6FE;
+
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -185,4 +193,11 @@ main {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+/* Style page content */
+main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
 }
