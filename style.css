@@ -1,6 +1,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  --primary: rgb(225, 225, 225);
   --dark-gray: rgb(90, 90, 90);
   --light-gray: rgb(148, 148, 148);
   --focus-blue: rgb(69, 159, 189);
