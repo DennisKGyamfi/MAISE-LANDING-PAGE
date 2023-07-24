@@ -1,6 +1,9 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  --dark-gray: rgb(90, 90, 90);
+  --light-gray: rgb(148, 148, 148);
+  --focus-blue: rgb(69, 159, 189);
 }
 
 body {
@@ -9,28 +12,181 @@ body {
   min-height: 100vh;
   /* max-width: 600px; */
   background-color: #f5f6f7;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
 /* General flex-style */
 .d-flex {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
 }
 
 /* navbar style */
 header {
 background-color: #fff;
-font-size: 12px;
-/* width: 100%; */
+font-size: 18px;
+width: 100%;
+height: 8vh;
+/* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
-ul {
+header nav .logo {
+  width: 10%;
+  padding: 10px;
+  float: left;
+} 
+
+header nav .logo h1 {
+  margin-right: 60px;
+  font-weight: 700;
+}
+
+.nav-links {
+margin: auto;
+width: 55%;
+padding: 5px;
+}
+
+.nav-links .nav-links-list {
   list-style: none;
-  
-  width: 60px;
+  justify-content: left;
 }
 
-li a {
+.nav-links .nav-links-list .fa-chevron-down {
+  margin-left: 2px;
+}
+.nav-links .nav-links-list li {
+padding: 5px;
+}
+.nav-links .nav-links-list li a {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+.nav-links .nav-links-list li a:hover {
+  cursor: pointer;
+  color: #269af3;
+  border-bottom: 2px solid #269af3;
+
+}
+.nav-links .nav-links-list li a i:hover {
+  cursor: pointer;
+  color: #269af3;
+
+}
+
+header .nav-right-section {
+/* position: relative;
+top: 5px;
+left: 0.1vw; */
+float: right;
+/* width: 5%; */
+}
+
+header .nav-notifs {
+margin-right: 15px;
+justify-content: space-evenly;
+}
+header .nav-notifs .fa-bell, .fa-comments{
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.nav-right-section .nav-search svg {
+  fill: var(--dark-gray);
+  height: var(--icon-size);
+  width: var(--icon-size);
+  position: absolute;
+  left: var(--side-margin);
+}
+
+.nav-right-section .nav-search {
+  position: relative;
+--target-size: 48px;
+  --box-height: var(--target-size);
+  height: var(--box-height);
+  --border-width: 2px;
+  --border-radius: calc(var(--box-height) / 2);
+  max-width: 561px;
+  --icon-size: calc(var(--box-height) * 3 / 4);
+  --side-margin: calc(var(--border-radius) / 2);
+}
+
+.nav-right-section input[type='search'] {
+  border: var(--border-width) solid var(--dark-gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  --webkit-appearance: none;
+  color: var(--dark-gray);
+  color: var(--light-gray);
+  opacity: 1;
+  padding-left: calc(var(--side-margin) + var(--icon-size) + 4px);
+  padding-right: var(--side-margin);
+  height: 80%;
+  width: 90%;
+
+}
+/* topnav media query */
+@media only screen and (min-width: 768px) {
+  header {
+    font-size: 14px;
+    }
+}
+
+
+
+/* Sidenav  */
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 150px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 2;
+  /* Stay at the top */
+  left: 1;
+  background-color: #fff;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
   display: block;
-    width: 60px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
