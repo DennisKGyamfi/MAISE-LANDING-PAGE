@@ -29,6 +29,7 @@ background-color: #fff;
 font-size: 18px;
 width: 100%;
 height: 10vh;
+z-index: 1;
 /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
@@ -36,6 +37,7 @@ header nav .logo {
   width: 10%;
   padding: 10px;
   float: left;
+    
 } 
 
 header nav .logo h1 {
@@ -48,9 +50,6 @@ margin: auto;
 width: 55%;
 padding: 5px;
 }
-/* .nav-links:hover {
-  border-bottom: 2px solid #269af3;
-} */
 
 .nav-links .nav-links-list {
   list-style: none;
@@ -58,7 +57,7 @@ padding: 5px;
 }
 
 .nav-links .nav-links-list .fa-chevron-down {
-  margin-left: 2px;
+  margin-left: 1px;
 }
 .nav-links .nav-links-list li {
 padding: 5px;
@@ -89,10 +88,10 @@ margin-right: 15px;
 justify-content: space-evenly;
 }
 header .nav-notifs .fa-bell, .fa-comments{
-  border: 1px solid var(--dark-gray);
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 5px;
+  border: 2px solid var(--dark-gray);
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 2px;
 }
 
 .nav-right-section .nav-search svg {
@@ -136,6 +135,55 @@ header .nav-notifs .fa-bell, .fa-comments{
     }
 }
 
+  @media only screen and (max-width: 600px) {
+    header {
+        font-size: 5.5px;
+        height: 5vh;
+      }
+header nav .logo {
+  width: 20px;
+  
+}
+    header nav .logo h1 {
+      margin-right: 15px;
+    }
+    .nav-links {
+      width: 500px;
+      padding: 2px;
+    }
+    .nav-links .nav-links-list {
+      list-style: none;
+      justify-content: left;
+    }
+
+    header .nav-notifs {
+      margin-right: 5px;
+    }
+    header .nav-notifs .fa-bell,
+    .fa-comments {
+          border: 1px solid var(--dark-gray);
+          border-radius: 20px;
+          padding: 5px;
+          margin-right: 2px;
+        }
+    .nav-right-section .nav-search {
+      position: relative;
+      --target-size: 20px;
+      --border-width: 1px;
+      max-width: 200px;
+      --icon-size: calc(var(--box-height) * 3 / 4);
+      --side-margin: calc(var(--border-radius) / 2);
+    }
+.nav-right-section input[type='search'] {
+  margin-top: 3px;
+  font-size: 0.5rem;
+  opacity: 1;
+  height: 60%;
+  width: 100%;
+padding-left: calc(var(--side-margin) + var(--icon-size) + 2px);
+  padding-right: var(--side-margin);
+}
+  }
 
 
 /* Sidenav  */
@@ -148,7 +196,7 @@ header .nav-notifs .fa-bell, .fa-comments{
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 1;
   left: 1;
   background-color: #fff;
@@ -169,27 +217,46 @@ header .nav-notifs .fa-bell, .fa-comments{
 margin-right: 5px;
 }
 
-.sidenav a  .travel::after{
-  margin-bottom: 10px;
+.travel {
+
+  margin-bottom: 30px;
+}
+.storage, .account {
+  margin-top: 30px;
+}
+hr{
+  width: 90%;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-
   color: var(--focus-blue);
   border-left: 2px solid #269af3;
   background-color: #EBF6FE;
 
 }
 
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
   .sidenav a {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+.sidenav {
+    width: 150px;
+    z-index: -1;
+    top: 1;
+    left: 1;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
   }
 }
 
