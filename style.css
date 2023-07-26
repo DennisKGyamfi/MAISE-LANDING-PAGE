@@ -49,9 +49,9 @@ margin: auto;
 width: 55%;
 padding: 5px;
 }
-.nav-links:hover {
+/* .nav-links:hover {
   border-bottom: 2px solid #269af3;
-}
+} */
 
 .nav-links .nav-links-list {
   list-style: none;
@@ -72,12 +72,12 @@ padding: 5px;
 .nav-links .nav-links-list li a:hover {
   cursor: pointer;
   color: #269af3;
-  border-bottom: 2px solid #269af3;
+  /* border-bottom: 2px solid #269af3; */
 
 }
 .nav-links .nav-links-list li a i:hover {
   cursor: pointer;
-  color: #269af3;
+  /* color: #269af3; */
 
 }
 
@@ -140,6 +140,11 @@ header .nav-notifs .fa-bell, .fa-comments{
 
 
 /* Sidenav  */
+
+/* img {
+  border-radius: 50%;
+} */
+
 .sidenav {
   height: 100%;
   width: 200px;
