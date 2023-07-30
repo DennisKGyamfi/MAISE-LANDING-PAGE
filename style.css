@@ -312,24 +312,29 @@ width: 100%;
   grid-template-columns: auto auto;
   height: 400px;
   align-content: space-between;
-  background-color:#f5f6f7;
+  /* background-color:#f5f6f7; */
   padding: 10px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #818181;
-  padding: 20px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
+  /* padding: 20px; */
   /* font-size: 30px; */
-  text-align: center;
+  text-align: left;
 }
 
 .grid-image {
-  width: 300px;
-}
+  border-radius: 20px 20px 0 0;
+} 
+
 
 /* 
 aside {
 
 } */
+
