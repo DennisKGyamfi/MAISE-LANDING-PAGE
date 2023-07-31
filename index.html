@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <header>
+     <header> 
         <!-- navbar -->
-        <nav class="d-flex topnav">
+         <nav class="d-flex topnav">
             <div class="logo d-flex">
                 <h1>
                     Maise
@@ -51,33 +51,44 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <aside class="aside">
-        <div class="sidenav">
+    </header> 
+    
+    <aside class="sidebar">
+        <div class="sidebar__profile">
+            <div class="avatar__wrapper">
+                <img class="avatar" src="images/accImg.jpg" alt="Vladmir Picture">
+                <div class="online__status"></div>
+            </div>
+            <section class="avatar__name hide">
+                <div class="user-name">Vladmir Raksha </div>
+                <div class="status">Premium Plan </div>
+            </section>
+            </div>
+        </div>
+        
+    <div class="divider"></div>
 
-            <hr>
+        <div class="sidenav">
+            <div class="divider"></div>
             <a href="#" class="storage"><i class="fa-regular fa-hard-drive"></i>Storage</a>
             <a href="#"><i class="fa-regular fa-newspaper"></i>News</a>
             <a href="#"><i class="fa-solid fa-film"></i>Movies</a>
             <a href="#"><i class="fa-solid fa-music"></i>Music</a>
             <a href="#" class="travel"><i class="fa-solid fa-plane-up"></i></i>Travel</a>
 
-            <hr>
+            <div class="divider"></div>
+            <!-- <hr> -->
 
             <a href="#" class="account"><i class="fa-regular fa-circle-user"></i>Account</a>
             <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
             <a href="#"><i class="fa-regular fa-life-ring"></i>Help & Support</a>
             <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
-
         </div>
-
-
     </aside>
-
     <main>
         <div class="hero">
             <div class="container">
-                <img src="images/hero-image.jpg" alt="Sunrise img" class="hero-image">
+                <img src="images/hero-image.jpg" alt="Sunrise img" class="hero-image" width="100%" height="50% ">
                 <div class="content">
                     <div class="hero-top">
                         <p>Travel</p>
@@ -96,53 +107,53 @@
                     </div>
                 </div>
             </div>
-        
-
-        <div class="grid-container">
-            <div class="grid-item">
-                <div class="grid-image-portion">
-                    <img src="images/blueCar.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
-                </div>
-                <div class="grid-image-description">
-                    <div class="grid-image-description-top">
-                        <h6>Business</h6>
-                        <p>Before New York Auto Show, Cars Take their own star turns</p>
+    
+    
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="grid-image-portion">
+                        <img src="images/blueCar.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
                     </div>
-                    <hr>
-                    <div class="hero-bottom d-flex">
-                        <div class="hero-image-owner">
-                            <img src="images/accImg.jpg" alt="user">
-                            <p>Tillie Benson <span> - 5 min ago</span></p>
+                    <div class="grid-image-description">
+                        <div class="grid-image-description-top">
+                            <h6>Business</h6>
+                            <p>Before New York Auto Show, Cars Take their own star turns</p>
                         </div>
-                        <div class="icons">
-                            <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                            <i class="fa-solid fa-share" style="color: #818181;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="grid-image-portion">
-                    <img src="images/oilField.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
-                </div>
-                <div class="grid-image-description">
-                    <div class="grid-image-description-top">
-                        <h6>Politics</h6>
-                        <p>U.S. Risks Rolling Oil Markets in Trying to Tighten Sanctions</p>
-                    </div>
-                    <hr>
-                    <div class="hero-bottom d-flex">
-                        <div class="hero-image-owner">
-                            <img src="images/accImg.jpg" alt="user">
-                            <p>Todd Torres <span> - 30 min ago</span></p>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                            <i class="fa-solid fa-share" style="color: #818181;"></i>
+                        <hr>
+                        <div class="hero-bottom d-flex">
+                            <div class="hero-image-owner">
+                                <img src="images/accImg.jpg" alt="user">
+                                <p>Tillie Benson <span> - 5 min ago</span></p>
+                            </div>
+                            <div class="icons">
+                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
+                                <i class="fa-solid fa-share" style="color: #818181;"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="grid-item">
+                    <div class="grid-image-portion">
+                        <img src="images/oilField.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
+                    </div>
+                    <div class="grid-image-description">
+                        <div class="grid-image-description-top">
+                            <h6>Politics</h6>
+                            <p>U.S. Risks Rolling Oil Markets in Trying to Tighten Sanctions</p>
+                        </div>
+                        <hr>
+                        <div class="hero-bottom d-flex">
+                            <div class="hero-image-owner">
+                                <img src="images/accImg.jpg" alt="user">
+                                <p>Todd Torres <span> - 30 min ago</span></p>
+                            </div>
+                            <div class="icons">
+                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
+                                <i class="fa-solid fa-share" style="color: #818181;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="grid-item">
                     <div class="grid-image-portion">
                         <img src="images/yellowCar.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
@@ -165,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="grid-item">
                     <div class="grid-image-portion">
                         <img src="images/building.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
@@ -188,8 +199,8 @@
                         </div>
                     </div>
                 </div>
-
-                 <div class="grid-item">
+    
+                <div class="grid-item">
                     <div class="grid-image-portion">
                         <img src="images/room.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
                     </div>
@@ -210,10 +221,11 @@
                             </div>
                         </div>
                     </div>
-                 </div>
+                </div>
                 <div class="grid-item">
                     <div class="grid-image-portion">
-                        <img src="images/sport.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
+                        <img src="images/different-people-looking-soccer-team.jpg" alt="car on show" class="grid-image"
+                            width="300px" height="200px">
                     </div>
                     <div class="grid-image-description">
                         <div class="grid-image-description-top">
@@ -234,9 +246,10 @@
                     </div>
                 </div>
                 <!--<div class="grid-item">7</div>
-                <div class="grid-item">8</div> -->
-        </div>
+                    <div class="grid-item">8</div> -->
+            </div>
     </main>
+    
     <!-- <aside>
 
     </aside> -->

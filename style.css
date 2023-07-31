@@ -23,15 +23,25 @@ body {
   align-items: center;
 }
 
+.divider {
+  width: 100%;
+  background-color: var(--light-gray);
+  height: 1px;
+  display: block;
+  
+}
+hr {
+  width: 90%;
+}
 /* navbar style */
 header {
-  position: fixed;
+position: fixed;
 background-color: #fff;
+/* border: 5px solid red; */
 font-size: 18px;
 width: 100%;
-height: 10vh;
+height: 6vh;
 z-index: 1;
-/* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
 header nav .logo {
@@ -189,17 +199,75 @@ padding-left: calc(var(--side-margin) + var(--icon-size) + 2px);
 
 /* Sidenav  */
 
-.sidenav {
+.sidebar {
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 0;
+  z-index: -1;
   top: 1;
   left: 1;
   background-color: #fff;
   overflow-x: hidden;
   padding-top: 20px;
 }
+
+/*? account part */
+
+.sidebar__profile {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 8vh;
+  margin-bottom: 20px;
+}
+
+.avatar__wrapper {
+  position: relative;
+  display: flex;
+}
+
+.avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.avatar__name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.status {
+  font-size: 0.9rem;
+}
+
+/* .online__status {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--success);
+  bottom: 3px;
+  right: 3px;
+} */
+
 
 /* The navigation menu links */
 .sidenav a {
@@ -221,9 +289,7 @@ margin-right: 5px;
 .storage, .account {
   margin-top: 30px;
 }
-hr{
-  width: 90%;
-}
+
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -262,23 +328,23 @@ main {
   margin-left: 210px;
   margin-right: 200px;
   /* Same as the width of the sidebar and aside */
-  /* padding: 0px 10px; */
+  width: 700px;
+  /* background-color: green; */
 }
 
 /* .hero {
-  margin-top: 20px;
-} */
+  border: 1px solid red; 
+  background-color: red; 
+}  */
 
 .container {
   position: relative;
   max-width: 90%;
   /* Maximum width */
-  margin: 0 auto;;
+  margin: 10px auto; 
   /* Center it */
 }
-.hero-image {
-width: 100%;
-}
+
 
 .container .content {
   position: absolute;
