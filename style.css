@@ -27,12 +27,13 @@ body {
   width: 100%;
   background-color: var(--light-gray);
   height: 1px;
-  display: block;
-  
+  display: block;  
 }
+
 hr {
   width: 90%;
 }
+
 /* navbar style */
 header {
 position: fixed;
@@ -58,7 +59,7 @@ header nav .logo h1 {
 
 .nav-links {
 margin: auto;
-width: 55%;
+/* width: 50%; */
 padding: 5px;
 }
 
@@ -419,8 +420,56 @@ main {
 .fa-bookmark{
   margin-right: 10px;
 }
-/* 
-aside {
 
+
+/* right aside */
+
+.right-aside {
+  position: relative;
+  float: right;
+  bottom: 160vh;
+  right: 30px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 5px;  
+}
+
+.right-header {
+  justify-content: space-evenly;
+
+}
+
+.right-side-categories {
+  display: grid;
+  row-gap: 2px
+  ;
+}
+
+.news-cate {
+  margin-top: 10px;
+}
+/* 
+.cate-list {
+  padding: auto 5px;
 } */
 
+.cate-image {
+  border-radius: 10px;
+  /* margin-right: 20px; */
+}
+
+.cate-details {
+  width: 70%;
+  
+}
+
+.cate-details h5{
+  color: var(--light-gray);
+
+}
+
+.cate-details p {
+  color: black;
+  font-weight: 500;
+  padding: 2px;
+}
