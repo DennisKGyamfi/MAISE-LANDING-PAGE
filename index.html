@@ -2,69 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Maise</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <script src="https://kit.fontawesome.com/95ad04cf66.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <!-- navbar -->
-        <nav class="topnav d-flex">
-            <!-- <div class="logo d-flex">
-                <h1>
-                    Maise
-                </h1>
-                <i class="fa-solid fa-bars"></i>
-            </div> -->
-
-            <div class="nav-links">
-                <ul class="nav-links-list d-flex">
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">Politics</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Teach</a></li>
-                    <li><a href="#">More</a><i class="fa-solid fa-chevron-down" style="color: rgb(90, 90, 90);"></i>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="nav-right-section d-flex">
-                <div class="nav-notifs d-flex">
-                    <i class="fa-solid fa-bell fa-sm" style="color: rgb(90, 90, 90);"></i>
-                    <i class="fa-solid fa-comments fa-sm" style="color: rgb(90, 90, 90);"></i>
-                </div>
-
-                <div class="nav-search">
-                    <svg aria-hidden="true" viewBox="0 0 24 24">
-                        <path
-                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                    </svg>
-                    <input type="search" autocomplete="off" inputmode="search" placeholder="Type to search"
-                        type="search" class="nav-search-tab">
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <aside class="sidebar">
-
-        <div class="logo d-flex">
-            <h1>
-                Maise
-            </h1>
-            <i class="fa-solid fa-bars"></i>
+    <nav class="topnav d-flex">
+        <p class="logo">
+            <span class="logo-name"> Maise </span> <i class="fa-solid fa-bars"></i>
+        </p>
+        <a class="active" href="#home">Latest News</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Sports</a>
+        <a href="#">Teach</a>
+        <a href="#">More<i class="fa-solid fa-chevron-down" style="color: rgb(90, 90, 90);"></i></a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type to Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
 
-        <div class="divider"></div>
+    </nav>
+
+    <aside class="sidebar">
 
         <div class="sidebar__profile">
             <div class="avatar__wrapper">
@@ -78,10 +48,11 @@
         </div>
         </div>
 
+
         <div class="divider"></div>
 
         <div class="sidenav">
-            <div class="divider"></div>
+
             <a href="#" class="storage"><i class="fa-regular fa-hard-drive"></i>Storage</a>
             <a href="#"><i class="fa-regular fa-newspaper"></i>News</a>
             <a href="#"><i class="fa-solid fa-film"></i>Movies</a>
@@ -89,7 +60,7 @@
             <a href="#" class="travel"><i class="fa-solid fa-plane-up"></i></i>Travel</a>
 
             <div class="divider"></div>
-            <!-- <hr> -->
+
 
             <a href="#" class="account"><i class="fa-regular fa-circle-user"></i>Account</a>
             <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
@@ -97,6 +68,8 @@
             <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
         </div>
     </aside>
+
+    <!-- 
     <main>
 
         <div class="hero">
@@ -261,197 +234,9 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="grid-item">7</div>
-                    <div class="grid-item">8</div> -->
+
             </div>
-    </main>
-
-    <aside class="right-aside">
-
-        <div class="right-header d-flex">
-            <h3>Trending News</h3>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
-        <div class="divider"></div>
-        <div class="right-side-categories">
-            <div class="news-cate">
-                <div class="cate-list d-flex">
-                    <div class="cate-top">
-                        <img src="images/tiger-woods-image.jpg" alt="Tiger Woods" width="90px" height="90px"
-                            class="cate-image">
-                    </div>
-                    <div class="cate-details">
-                        <h5>Sport</h5>
-                        <p>Tiger Woods, in a Stirring Return to the Top, Captures the Masters at 43 </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="right-side-categories">
-                <div class="news-cate">
-                    <div class="cate-list d-flex">
-                        <div class="cate-top">
-                            <img src="images/full-shot-human-silhouettes-dancing-together.jpg" alt="Yoga Image"
-                                width="80px" height="80px" class="cate-image">
-                        </div>
-                        <div class="cate-details">
-                            <h5>Health</h5>
-                            <p>10 Years After an Exercise Study, Benefits persist </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right-side-categories">
-                    <div class="news-cate">
-                        <div class="cate-list d-flex">
-                            <div class="cate-top">
-                                <img src="images/red-sport-car-with-black-autotuning-road.jpg" alt="red car"
-                                    width="80px" height="80px" class="cate-image">
-                            </div>
-                            <div class="cate-details">
-                                <h5>Business</h5>
-                                <p>Buying a Tesla Seems Pretty Easy. But There Are a Few Things to Know </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-side-categories">
-                        <div class="news-cate">
-                            <div class="cate-list d-flex">
-                                <div class="cate-top">
-                                    <img src="images/various-breakfast-food-with-crackers.jpg" alt="Food" width="80px"
-                                        height="80px" class="cate-image">
-                                </div>
-                                <div class="cate-details">
-                                    <h5>Food</h5>
-                                    <p>What to cook this week, Top 15 Breakfast</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="right-side-categories">
-                            <div class="news-cate">
-                                <div class="cate-list d-flex">
-                                    <div class="cate-top">
-                                        <img src="images/FEJUCU4Y4BA7DH2WS7HT4BLCCY.jpg" alt="Roger Federer"
-                                            width="80px" height="80px" class="cate-image">
-                                    </div>
-                                    <div class="cate-details">
-                                        <h5>Sport</h5>
-                                        <p>Roger Federer's 101 Titles: By the Numbers</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="right-side-categories">
-                                <div class="news-cate">
-                                    <div class="cate-list d-flex">
-                                        <div class="cate-top">
-                                            <img src="images/medium-shot-senior-man-posing.jpg" alt="chinese man"
-                                                width="80px" height="80px" class="cate-image">
-                                        </div>
-                                        <div class="cate-details">
-                                            <h5>Health</h5>
-                                            <p>Gene-Edited Babies: What a Chinese Scientist Told an American Mentor </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    </aside>
-    <aside class="right-aside-mid">
-
-        <div class="right-mid d-flex">
-            <h3>Trending Sections</h3>
-            <i class="fa-solid fa-arrow-right"></i>
-        </div>
-        <div class="divider"></div>
-
-        <div class="right-mid-cate d-flex">
-            <div class="list-header d-flex">
-                <i class="fa-regular fa-flag"></i>
-                <h5>Politics</h5>
-            </div>
-
-            <div class="right-mid-views d-flex">
-                <p>60,250 views</p>
-                <i class="fa-solid fa-angle-up"></i>
-            </div>
-        </div>
-
-        <div class="right-mid-cate d-flex">
-            <div class="list-header d-flex">
-                <i class="fa-solid fa-suitcase"></i>
-                <h5>Business</h5>
-            </div>
-
-            <div class="right-mid-views d-flex">
-                <p>45,000 views</p>
-                <i class="fa-solid fa-angle-down" style="color: red;"></i>
-            </div>
-        </div>
-
-        <div class="right-mid-cate d-flex">
-            <div class="list-header d-flex">
-                <i class="fa-solid fa-futbol"></i>
-                <h5>Sports</h5>
-            </div>
-
-            <div class="right-mid-views d-flex">
-                <p>24,500 views</p>
-                <i class="fa-solid fa-angle-up"></i>
-            </div>
-        </div>
-        <div class="right-mid-cate d-flex">
-            <div class="list-header d-flex">
-                <i class="fa-solid fa-mobile-button"></i>
-                <h5>Technology</h5>
-            </div>
-
-            <div class="right-mid-views d-flex">
-                <p>9,850 views</p>
-                <i class="fa-solid fa-angle-down" style="color: red;"></i>
-            </div>
-        </div>
-
-        <div class="right-mid-cate d-flex">
-            <div class="list-header d-flex">
-                <i class="fa-solid fa-cake-candles"></i>
-                <h5>Food</h5>
-            </div>
-
-            <div class="right-mid-views d-flex">
-                <p>5,250 views</p>
-                <i class="fa-solid fa-angle-up"></i>
-            </div>
-    </aside>
-    <aside class="right-aside-bottom">
-        <div class="right-bottom d-flex">
-            <h3>Popular Tags</h3>
-            <i class="fa-solid fa-plus"></i>
-        </div>
-        <div class="divider"></div>
-
-        <div class="right-bottom-topics">
-            <ul class="topics-list">
-                <li>Politics</li>
-                <li>Advertising</li>
-                <li>News</li>
-                <li>Development</li>
-                <li>Design</li>
-                <li>Finance</li>
-                <li>Football</li>
-                <li>Future</li>
-                <li>Travel</li>
-                <li>Technology</li>
-                <li>Food</li>
-                <li>Architecture</li>
-                <li>Tennis</li>
-                <li>Video</li>
-                <li>Style</li>
-                <li>Real Estate</li>
-                <li>Photography</li>
-            </ul>
-        </div>
-    </aside>
+    </main> -->
 
 </body>
 
