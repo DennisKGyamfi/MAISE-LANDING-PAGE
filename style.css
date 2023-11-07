@@ -28,10 +28,9 @@ flex-direction: row;
 }
 
 .divider {
-  /* width: 100%; */
-  background-color: gray;
-  height: 1px;
-  display: block;
+background-color: gray;
+height: 1px;
+display: block;
 }
 
 /* navbar style */
@@ -44,11 +43,11 @@ flex-direction: row;
 
 .topnav .logo {
   margin-right: 100px;
-  color: var(--dark-gray);
+  color: var(--dark-gray); 
 }
 
 .topnav .logo .logo-name {
-margin-right: 70px;
+margin-right: 80px;
 margin-left: 10px;
 font-size: 20px;
 font-weight: 600;
@@ -62,7 +61,6 @@ font-weight: 600;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
 }
 
 .topnav 
