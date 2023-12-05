@@ -1,243 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <title>Maise</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet" />
     <script src="https://kit.fontawesome.com/95ad04cf66.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="nav_sidebar_style.css">
+
+    <title>Maise</title>
 </head>
 
 <body>
-    <nav class="topnav d-flex">
-        <p class="logo">
-            <span class="logo-name"> Maise </span> <i class="fa-solid fa-bars"></i>
-        </p>
-        <a class="active" href="#home">Latest News</a>
-        <a href="#">Politics</a>
-        <a href="#">Business</a>
-        <a href="#">Sports</a>
-        <a href="#">Teach</a>
-        <a href="#">More<i class="fa-solid fa-chevron-down" style="color: rgb(90, 90, 90);"></i></a>
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Type to Search.." name="search">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="#">Maise </a><i class="fa-solid fa-bars"></i>
+        </div>
+
+        <br>
+        <div class="user_profile">
+            <div class="user_photo">
+                <img src="images/accImg.jpg" alt="user photo">
+            </div>
+            <div class="user_description_section">
+                <p class="user_description">
+                    Vladmir Raksha
+                    <span class="account_status">Premium Plan</span>
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="sidebar_panel">
+            <ul>
+                <li><a href="#"><i class="fa-regular fa-hard-drive"></i> Storage</a></li>
+                <li><a href="#"><i class="fa-regular fa-newspaper"></i> News</a></li>
+                <li><a href="#"><i class="fa-solid fa-film"></i> Movies</a></li>
+                <li><a href="#"><i class="fa-solid fa-music"></i> Music</a></li>
+                <li><a href="#"><i class="fa-solid fa-plane-up"></i> Travel</a></li>
+
+                <br>
+                <li><a href="#"><i class="fa-regular fa-circle-user"></i> Account</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="#"><i class="fa-regular fa-life-ring"></i> Help & Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="navbar">
+
+            <ul>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Teach</a></li>
+                <li><a href="#">More <i class="fa-solid fa-chevron-down" style="color: #fff;"></i></a></li>
+            </ul>
+
+            <form action="#">
+                <input type="text" placeholder="Type to Search" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
+
         </div>
+        <div class="container">
+            <main class="main-content">
 
-    </nav>
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h4>Travel</h4>
+                        <p class="txt-par"> 25 of the most beautiful places around the world </p>
 
-    <aside class="sidebar">
+                        <div class="hero-divider"></div>
 
-        <div class="sidebar__profile">
-            <div class="avatar__wrapper">
-                <img class="avatar" src="images/accImg.jpg" alt="Vladmir Picture">
-                <div class="online__status"></div>
+                        <div class="hero-bottom-container d-flex">
+                            <div class="hero-bottom d-flex">
+                                <img src="images/accImg.jpg" alt="user" class="hero-bottom-user-img">
+                                <p class="bottom-user-details">Helena Thomton <span> .1 min ago</span></p>
+                            </div>
+
+                            <div class="icons">
+                                <i class="fa-regular fa-bookmark" style="color: #fafafa;"></i>
+                                <i class="fa-solid fa-share" style="color: #f7f7f7;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid_section">
+                    <div class="grid_container">
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/car1.jpg" alt="Grid Image 1">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Business</h5>
+                                <p>Before New York Auto show, Cars Take Their own star turns</p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details">Helena Thomton <span>. 5 min ago</span></p>
+                                    </div>
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/car1.jpg" alt="Grid Image 2">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Politics</h5>
+                                <p>U.S Risks ROilling Markets in Trying to Tighten Sanctions </p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details">Todd Torres <span>. 30 min ago</span></p>
+                                    </div>
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/factory.jpg" alt="Grid Image 3">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Business</h5>
+                                <p> Uber's self-driving car unit grabs $1 biliion in investment </p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details">Tillie Berson <span>. 1 hour ago</span></p>
+                                    </div>
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/factory.jpg" alt="Grid Image 4">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Arts</h5>
+                                <p> Photographs reimagine Harvana as a pastel-colored dreamland </p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details">Phillip Kelly <span>. 2 hour ago</span></p>
+                                    </div>
+
+
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/factory.jpg" alt="Grid Image 5">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Travel</h5>
+                                <p> Find inspiration in New York's Most Luxirious Mansions </p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details"> Helena Thompton <span>. 2 hour ago</span></p>
+                                    </div>
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-item-img">
+                                <img src="images/factory.jpg" alt="Grid Image 4">
+                            </div>
+                            <div class="grid-item-description">
+                                <h5>Sports</h5>
+                                <p> Manchester City returns to top of EPL table with derby win </p>
+                                <div class="divider"></div>
+                                <div class="grid-bottom-container d-flex">
+                                    <div class="grid-bottom d-flex">
+                                        <img src="images/accImg.jpg" alt="user" class="grid-bottom-user-img">
+                                        <p class="grid-user-details"> Ray Hammond <span>. 3 hour ago</span></p>
+                                    </div>
+
+                                    <div class="grid-icons">
+                                        <i class="fa-regular fa-bookmark"></i>
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+
+            <div class="right-section">
+                <div class="trending">
+                    <div class="trending-news-section d-flex">
+                        <h2>Trending News</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/twoods.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> Sport </h5>
+                            <p>
+                                Tiger Woods, in a stirring Return to the Top captures the masters at 43
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/nature1.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> Health </h5>
+                            <p>
+                                10 years After an Exercise study, Benefits persist jxkcnvvn kvcnk
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/car3.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> Business </h5>
+                            <p>
+                                Buying a Tesla seems Pretty Easy. But there Are a Few Things to know
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/meal.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> Food </h5>
+                            <p>
+                                What to cook this week. Top 15 Breakfast ddd dddd dddckm
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/win.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> sport </h5>
+                            <p>
+                                Roger Federer's 101 Titles: By the Numbers
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-item d-flex">
+                        <div class="news-item-img-section">
+                            <img src="images/oldie.jpg" alt="Tiger Woods Image" class="news-item-img">
+                        </div>
+                        <div class="news-item-description">
+                            <h5> Health </h5>
+                            <p>
+                                Gene-Edited Babies: What a Chinese Scientist Told an American Mentor
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="trending">
+                    <div class="trending-section d-flex">
+                        <h2>Trending Sections</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                    <div class="tag-item d-flex">
+                        <div class="tag-item-title d-flex">
+                            <i class="fa-regular fa-flag"></i>
+                            <h5> Politics </h5>
+                        </div>
+                        <div class="tag-item-views d-flex">
+                            <p> 60,250 Views </p>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <div class="tag-item d-flex">
+                        <div class="tag-item-title d-flex">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h5> Business </h5>
+                        </div>
+                        <div class="tag-item-views d-flex">
+                            <p> 45,000 Views </p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="tag-item d-flex">
+                        <div class="tag-item-title d-flex">
+                            <i class="fa-solid fa-futbol"></i>
+                            <h5> Sports </h5>
+                        </div>
+                        <div class="tag-item-views d-flex">
+                            <p> 24,500 Views </p>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+
+                    <div class="tag-item d-flex">
+                        <div class="tag-item-title d-flex">
+                            <i class="fa-solid fa-mobile"></i>
+                            <h5> Technology </h5>
+                        </div>
+                        <div class="tag-item-views d-flex">
+                            <p> 45,000 Views </p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="tag-item d-flex">
+                        <div class="tag-item-title d-flex">
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <h5> Food </h5>
+                        </div>
+                        <div class="tag-item-views d-flex">
+                            <p> 5,250 Views </p>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="trending tags-grid">
+                    <div class="tags-section d-flex">
+                        <h2>Trending Tags</h2>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="tags-container">
+                        <div class="tags">
+                            Politics
+                        </div>
+                        <div class="tags">
+                            Advertising
+                        </div>
+                        <div class="tags">
+                            News
+                        </div>
+                        <div class="tags">
+                            Development
+                        </div>
+                        <div class="tags">
+                            Design
+                        </div>
+                        <div class="tags">
+                            Finance
+                        </div>
+                        <div class="tags">
+                            Football
+                        </div>
+                        <div class="tags">
+                            Future
+                        </div>
+                        <div class="tags">
+                            Travel
+                        </div>
+                        <div class="tags">
+                            Technology
+                        </div>
+                        <div class="tags">
+                            Food
+                        </div>
+                        <div class="tags">
+                            Architecture
+                        </div>
+                        <div class="tags">
+                            Tennis
+                        </div>
+                        <div class="tags">
+                            Video
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <section class="avatar__name hide">
-                <div class="user-name">Vladmir Raksha </div>
-                <div class="status">Premium Plan </div>
-            </section>
         </div>
-        </div>
+    </div>
 
-
-        <div class="divider"></div>
-
-        <div class="sidenav">
-
-            <a href="#" class="storage"><i class="fa-regular fa-hard-drive"></i>Storage</a>
-            <a href="#"><i class="fa-regular fa-newspaper"></i>News</a>
-            <a href="#"><i class="fa-solid fa-film"></i>Movies</a>
-            <a href="#"><i class="fa-solid fa-music"></i>Music</a>
-            <a href="#" class="travel"><i class="fa-solid fa-plane-up"></i></i>Travel</a>
-
-            <div class="divider"></div>
-
-
-            <a href="#" class="account"><i class="fa-regular fa-circle-user"></i>Account</a>
-            <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
-            <a href="#"><i class="fa-regular fa-life-ring"></i>Help & Support</a>
-            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a>
-        </div>
-    </aside>
-
-    <!-- 
-    <main>
-
-        <div class="hero">
-            <div class="container">
-                <img src="images/hero-image.jpg" alt="Sunrise img" class="hero-image" width="100%" height="50% ">
-                <div class="content">
-                    <div class="hero-top">
-                        <p>Travel</p>
-                        <h3>25 of the most beautiful places around the world</h3>
-                    </div>
-                    <hr>
-                    <div class="hero-bottom d-flex">
-                        <div class="hero-image-owner">
-                            <img src="images/accImg.jpg" alt="user">
-                            <p>Helena Thomton <span> - 1 min ago</span></p>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-regular fa-bookmark" style="color: #fafafa;"></i>
-                            <i class="fa-solid fa-share" style="color: #f7f7f7;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="grid-container">
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/blueCar.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Business</h6>
-                            <p>Before New York Auto Show, Cars Take their own star turns</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Tillie Benson <span> - 5 min ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/oilField.jpg" alt="car on show" class="grid-image" width="300px"
-                            height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Politics</h6>
-                            <p>U.S. Risks Rolling Oil Markets in Trying to Tighten Sanctions</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Todd Torres <span> - 30 min ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/yellowCar.jpg" alt="car on show" class="grid-image" width="300px"
-                            height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Business</h6>
-                            <p>Uber's self-driving car unit grabs $1 billion in investment</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Tillie Benson <span> - 1 hour ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/building.jpg" alt="car on show" class="grid-image" width="300px"
-                            height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Arts</h6>
-                            <p>Photographs reimagine Havan as a pastel-colored dreamland</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Phillip Kelly <span> - 2 hours ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-solid fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/room.jpg" alt="car on show" class="grid-image" width="300px" height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Travel</h6>
-                            <p>Find Inspiration in New York's Most Luxirious Mansions</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Helina Thomton <span> - 2 hours ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="grid-image-portion">
-                        <img src="images/different-people-looking-soccer-team.jpg" alt="car on show" class="grid-image"
-                            width="300px" height="200px">
-                    </div>
-                    <div class="grid-image-description">
-                        <div class="grid-image-description-top">
-                            <h6>Sport</h6>
-                            <p>Manchester City returns to top pf EPL table with derby win</p>
-                        </div>
-                        <hr>
-                        <div class="hero-bottom d-flex">
-                            <div class="hero-image-owner">
-                                <img src="images/accImg.jpg" alt="user">
-                                <p>Ray Hammond <span> - 3 hours ago</span></p>
-                            </div>
-                            <div class="icons">
-                                <i class="fa-regular fa-bookmark" style="color: #818181;"></i>
-                                <i class="fa-solid fa-share" style="color: #818181;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-    </main> -->
-
+    <footer>
+        <p>&copy; 2023 Maise Landing page. All Rights Reserved.</p>
+    </footer>
 </body>
 
 </html>
