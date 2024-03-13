@@ -283,6 +283,7 @@ padding: 10px;
 height: max-content;
 /* border: 2px solid red; */
 border-radius: 30px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 
 }
 
@@ -385,11 +386,10 @@ border-bottom: 3px solid #f2f2f2;
 
 }
 
-/* .trending  {
+/*.trending  {
 border-bottom: 2px solid #333;
 padding-bottom: 5px;
 margin-bottom: 10px;
-
 } */
 
 .news-item {
